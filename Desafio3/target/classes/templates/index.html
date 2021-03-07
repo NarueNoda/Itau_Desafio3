@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
+
+<head th:replace="~{fragments/head :: head}"></head>
+<nav th:replace="~{fragments/nav :: navbar}"></nav>
+
+<body>
+	
+	<div class="container mt-5">
+		
+		<h2 class="titulo">Lançamentos Gerais</h2>
+		<p><span th:text="${count}"></span> lançamentos</p>
+		
+		<div class="main-content">
+			<table class="table table-responsive-md hover-table">
+				<thead>
+					<tr>
+						<th>Mês</th>
+						<th>Origem</th>
+						<th>Categoria</th>
+						<th>Valor</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="lancamento : ${lancamentos}">
+						<td th:text="${lancamento.mes_lancamento}"></td>
+						<td th:text="${lancamento.origem}"></td>
+						<td th:text="${lancamento.categoria}"></td>
+						<td>R$ <span th:text="${#numbers.formatDecimal(lancamento.valor, 0 , 'POINT', 2, 'COMMA')}"></span></td>
+					</tr>
+				</tbody>
+			</table>
+              
+		</div>
+	</div>
+	
+	<div th:replace="~{fragments/scripts :: scripts}"></div>
+</body>
+
+</html>

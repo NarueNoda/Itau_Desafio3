@@ -1,0 +1,23 @@
+<div th:fragment="navbar">
+	
+	<div class="navbar bg-colorItau navbar-dark">
+		<a class="navbar-brand" href="#">
+			<img th:src="@{/img/logo.png}" id="nav-logo"/>
+		</a>
+	</div>
+	
+	<nav class="mt-2 nav-color" id="nav-top">
+		  <ul class="nav nav-traco justify-content-center">
+		    <li class="nav-item">
+		      <a class="nav-link" th:href="@{/}">Geral</a>
+		    </li>
+		    <li class="nav-item">
+		      <a class="nav-link" th:href="@{/mes}">Por Mês</a>
+		    </li>
+		    <li class="nav-item">
+		      <a class="nav-link" th:href="@{/categoria}">Categoria</a>
+		    </li>
+		  </ul>
+	</nav>
+	
+</div>

@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+footer{
+	text-align: center;
+  	padding: 3px;
+  	background-color: #6f6f6f;
+  	color: white;
+  	padding: 20px;
+  	margin-top: 60px;
+}
+
+.bg-colorItau{
+	background-color: #EC7000;
+}
+
+.text-Itau{
+	color: #EC7000;
+}
+
+.titulo{
+	color: #003399;
+}
+
+.hover-table tbody tr:hover{
+	border-left: 3px solid #EC7000;
+	background-color: #e6e6e6;
+}
+
+.hover-table tbody tr{
+	border-left: 3px solid transparent;
+}
+
+.nav-traco{
+	border-bottom: 1px solid #dee2e6;
+}
+
+.nav-traco .nav-link:focus, .nav-traco .nav-link:hover {
+    border-bottom: 2px solid #EC7000;
+}
+
+.nav-traco .nav-link {
+    margin-bottom: -1px;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-traco a:hover{
+	color: #EC7000;
+}
+
+.nav-traco a{
+	color: #003399;
+}
+
+#nav-logo{
+	width: 30px;
+	height: 30px;
+}
+
